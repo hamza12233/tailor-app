@@ -1,0 +1,8 @@
+Hi <%=@tailor.first_name%>,
+<p>
+   You have received a bidding rejected against order # <%= @proposal.id %> follow the below link to review that:
+  <%= link_to 'here', "#{Rails.application.secrets.domain_frontend}my-orders/#{@proposal.id}" %>.
+</p>
+
+<p>Regards,</p>
+<p>Tailors App Team</p>

@@ -1,0 +1,7 @@
+Hi <%=@tailor.first_name%>,
+<p>
+  <%= @user.first_name %> has placed an order and invited you for bidding, click on the link to view order details: <%= link_to 'here', "#{Rails.application.secrets.domain_backend}/" %>.
+</p>
+
+Best,<br/>
+Team Darrzee

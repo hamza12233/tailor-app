@@ -1,0 +1,15 @@
+Dear <%= @tailor.first_name %>,
+<p>
+  Congratulations you have been selected for order # <%= @proposal.id %>
+</p>
+<p>
+  We are now finalizing the order and will notify you soon as you can start working on the order.
+  Once we confirm that a payment has been recieved and held in our account for you we will notify you.
+  After that we recommend to finalize requirements before starting any work.
+</p>
+<span>Click here to see orders: </span><%= "#{Rails.application.secrets.domain_frontend}/my-orders/#{@proposal.id}" %>
+<p>
+  Regards,
+  <br>
+  Darrzee Team
+</p>

@@ -1,0 +1,19 @@
+json.id tailor.id
+json.first_name tailor.first_name
+json.last_name tailor.last_name
+json.email tailor.email
+json.favorite current_user.favorite_tailor?(tailor) if current_user.present?
+json.role tailor.role
+json.phone_number tailor.phone_number
+json.whatsapp_number tailor.whatsapp_number
+json.profile_photo tailor.profile_photo
+json.cover_photo tailor.cover_photo
+json.about_me tailor.about_me
+json.gender tailor.gender
+json.street tailor.street
+json.city tailor.city
+json.state tailor.state
+json.country tailor.country
+json.average_categories_cost tailor.average_categories_cost
+json.experience tailor.experience
+json.average_rating tailor.average_rating

@@ -1,0 +1,10 @@
+Dear <%=@customer.first_name%>,
+<p>
+  Your requested tailor has agreed to place a bid on your order # <%= @proposal.id %>.
+  Keep an eye out on their response in your email and in our chat.Once you have recieved all the bids,
+  please choose the tailor which matches your style and expectations.
+  <%= link_to 'here', "#{Rails.application.secrets.domain_frontend}/my-orders/#{@proposal.id}" %>.
+</p>
+
+<p>Regards,</p>
+<p>Darrzee Team</p>

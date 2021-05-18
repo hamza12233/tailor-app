@@ -1,0 +1,8 @@
+<p>Welcome <%=@resource.first_name%>!</p>
+
+<p>You have requested to join Darrzee, Please click this link to confirm your account.</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>Regards,</p>
+<p>Darrzee </p>

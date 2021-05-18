@@ -1,0 +1,10 @@
+Dear <%=@customer.first_name%>,
+<p>
+  Your requested tailor has declined to place a bid on your order # <%= @proposal.id %>.
+  But not to worry we have many tailors on the platform so you should expect a response from others that you have requested a bid from.
+  You can always request more tailor to bid on the order.
+  <%= link_to 'here', "#{Rails.application.secrets.domain_frontend}my-orders/#{@proposal.id}" %>.
+</p>
+
+<p>Regards,</p>
+<p>Darrzee Team</p>
